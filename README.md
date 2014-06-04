@@ -13,12 +13,16 @@ a wix project for generating an MSI from Atom build output
 + Build output from Atom
 
 ### wixtoolset (v3.8)
-`````batch
+`````cmd
 cinst wixtoolset -version 3.8.1128.0
 `````
 
+#### :exclamation: build output needs to be accessible via Deploy at the root of your working copy of this repo
+`````cmd
+mklink /d Deploy S:\github\atom
+`````
 ### from visual studio command prompt (or with msbuild in your path)
-`````batch
+`````cmd
 msbuild Atom.sln
 `````
 

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "atom-wix", "atom-wix.wixproj", "{8037F2F4-858C-46FF-868F-826FDD0F04D9}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Atom", "Atom\Atom.wixproj", "{C5947177-A04D-4E36-B243-3989734FF331}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8037F2F4-858C-46FF-868F-826FDD0F04D9}.Debug|x86.ActiveCfg = Debug|x86
-		{8037F2F4-858C-46FF-868F-826FDD0F04D9}.Debug|x86.Build.0 = Debug|x86
-		{8037F2F4-858C-46FF-868F-826FDD0F04D9}.Release|x86.ActiveCfg = Release|x86
-		{8037F2F4-858C-46FF-868F-826FDD0F04D9}.Release|x86.Build.0 = Release|x86
+		{C5947177-A04D-4E36-B243-3989734FF331}.Debug|x86.ActiveCfg = Debug|x86
+		{C5947177-A04D-4E36-B243-3989734FF331}.Debug|x86.Build.0 = Debug|x86
+		{C5947177-A04D-4E36-B243-3989734FF331}.Release|x86.ActiveCfg = Release|x86
+		{C5947177-A04D-4E36-B243-3989734FF331}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Component Id="Path" Guid="C40214AB-D824-48C0-B4B8-122158457FF1">
+        <Environment
+          Id="PATH" Action="set" Name="PATH" System="no" Part="last" Permanent="no"
+          Value="[DataDir]resources\app\apm\node_modules\atom-package-manager\bin" />
+      </Component>
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLLOCATION" Name="$(var.ProjectName)">
+          <Directory Id="DataDir" />
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="$(var.ProjectName)"/>
+      </Directory>
+    </Directory>
+
+    
+
+    <Feature Id="Atom" Title="Atom" Description="Installs all the files needed for Atom" 
+             Level="1" AllowAdvertise="no" ConfigurableDirectory="INSTALLLOCATION">
+      <ComponentGroupRef Id="Main" Primary="yes" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="Path" />
+    </Feature>
+  </Fragment>
+</Wix>
